@@ -1,0 +1,322 @@
+/* Presentation polish. Kept separate to make the v1 visual direction reversible. */
+:root {
+  /* The same offline-safe stack is used by the website and the single-file copy. */
+  --sans: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+  --serif: Georgia, 'Times New Roman', serif;
+}
+[hidden] { display: none !important; }
+body { font-size: 16px; }
+body.modal-open { overflow: hidden; }
+.site-header { gap: 20px; }
+.desktop-nav { gap: clamp(16px, 2.2vw, 32px); }
+.desktop-nav a, .header-cta { font-size: 14px; }
+.header-cta { min-height: 46px; }
+.button, .text-link { font-size: 14px; }
+.button { min-height: 54px; gap: 20px; }
+.hero { min-height: 730px; }
+.hero-art { min-height: 610px; }
+.hero-copy { min-width: 0; }
+.hero .eyebrow { font-size: 10px; letter-spacing: 1.1px; flex-wrap: wrap; line-height: 1.5; }
+.hero h1 { margin-top: 26px; }
+.hero-description { max-width: 420px; font-size: 16px; line-height: 1.75; }
+.hero-actions { gap: 18px; }
+.hero-actions .button, .hero-actions .text-link { font-size: 14px; }
+.hero-footnote { margin-top: 30px; }
+.hero-footnote > span:nth-child(2) { font-size: 12px; }
+.scroll-cue > span { font-size: 10px; }
+.landscape-frame > img { filter: saturate(.72); object-position: 50% 35%; }
+.landscape-tint { background: linear-gradient(180deg, #0d322210, #123d4210 45%, #0d2f32aa); }
+.landscape-label, .landscape-coord { font-size: 10px; letter-spacing: 1px; text-shadow: 0 1px 6px #0c2a20; }
+.landscape-coord { bottom: 22px; }
+.hero-photo img, .media-image > img, .day-image > img, .gallery-item > img { filter: saturate(.84); }
+.hero-photo div > span:first-child { font-size: 10px; letter-spacing: .8px; }
+.art-caption { font-size: 16px; }
+.section-kicker { font-size: 11px; line-height: 1.6; letter-spacing: 1.1px; }
+.section-kicker > span:last-child { font-size: 10px; letter-spacing: .9px; }
+.eyebrow { font-size: 11px; line-height: 1.5; }
+.about-copy p, .education-intro > p, .course-body p,
+.media-copy > p, .section-heading > p, .day-panels p,
+.faq-list details > p { font-size: 16px; line-height: 1.8; }
+.about-copy .lead { font-size: 24px; line-height: 1.45; }
+.about-copy p { margin-bottom: 20px; }
+.section-heading > p { max-width: 340px; }
+.vision-statement .eyebrow, .founders > .eyebrow { font-size: 11px; }
+.mission summary { font-size: 18px; }
+.mission ol { font-size: 15px; line-height: 1.8; }
+.outcome > span { font-size: 12px; }
+.outcome p { font-size: 17px; }
+.outcome small { font-size: 14px; line-height: 1.6; }
+.pill { font-size: 10px; }
+.education-intro > p { max-width: 400px; }
+.four-t-list { min-width: 0; }
+.four-t-list summary { gap: 22px; }
+.four-t-list summary small { font-size: 14px; line-height: 1.5; }
+.course-number { font-size: 13px; }
+.course-body p { max-width: 400px; }
+.book-reference { font-size: 13px; max-width: 100%; }
+.book-reference > span { font-size: 10px; }
+.curriculum > summary > span:first-child > small { font-size: 10px; }
+.curriculum-action { font-size: 14px; min-height: 44px; }
+.curriculum-grid p { font-size: 15px; }
+.curriculum-grid small { font-size: 12px; line-height: 1.6; }
+.curriculum-grid article > span { font-size: 12px; }
+.curriculum-note { font-size: 13px; }
+.media-copy > p { max-width: 400px; }
+.media-tags { max-width: 430px; }
+.media-tags > span { font-size: 12px; line-height: 1.5; }
+.media-note { font-size: 10px; line-height: 1.5; letter-spacing: .8px; }
+.media-bottom { font-size: 10px; line-height: 1.7; }
+.day-schedule > .eyebrow { font-size: 11px; }
+.day-tabs { max-width: none; }
+.day-tabs > button { font-size: 14px; min-height: 44px; }
+.day-panels p { max-width: 420px; }
+.day-activities > span { font-size: 12px; line-height: 1.5; }
+.day-footnote { font-size: 11px; line-height: 1.6; }
+.image-caption { font-size: 10px; line-height: 1.5; letter-spacing: .8px; }
+.gallery-controls .round-button { width: 46px; height: 46px; }
+.gallery-item small { font-size: 10px; line-height: 1.5; }
+.gallery-footer > span { font-size: 11px; line-height: 1.5; }
+.gallery-footer > p { font-size: 14px; }
+.mudir-portrait > img { filter: saturate(.88); }
+.mudir-label { font-size: 10px; }
+.mudir-copy > span { font-size: 13px; }
+.mudir-copy > p, .founders p { font-size: 14px; line-height: 1.7; }
+.teacher-row span { font-size: 13px; line-height: 1.6; }
+.teacher-row > small { font-size: 12px; line-height: 1.5; max-width: 138px; }
+.more-teachers > summary { font-size: 15px; min-height: 56px; }
+.additional-teachers h3 { font-size: 16px; }
+.additional-teachers p { font-size: 13px; }
+.source-note { font-size: 12px; }
+.join-top .eyebrow, .join-year { font-size: 11px; line-height: 1.6; }
+.join-main > p { font-size: 16px; }
+.join-contact { flex-wrap: wrap; font-size: 11px; line-height: 1.6; }
+.join-contact > span { font-size: 14px; }
+.join-bottom { align-items: center; }
+.join-bottom > span { font-size: 10px; line-height: 1.7; }
+.join-bottom > a { font-size: 13px; min-height: 44px; display: inline-flex; align-items: center; }
+.faq > div > .eyebrow { font-size: 11px; }
+.faq-list summary { font-size: 16px; line-height: 1.6; min-height: 65px; }
+.footer-top > p { font-size: 16px; }
+.footer-details .eyebrow { font-size: 10px; }
+.footer-details address, .footer-details a { font-size: 14px; }
+.footer-details a { min-height: 40px; align-items: center; }
+.footer-note p { font-size: 12px; }
+.footer-bottom { font-size: 11px; line-height: 1.6; }
+.lightbox figcaption { font-size: 14px; padding-inline: 10px; }
+.lightbox-close { border-radius: 50%; }
+/* A bounded, event-driven diagram; it does not continuously animate. */
+.course-compass { display: flex; align-items: center; gap: 15px; margin-top: 26px; --course-angle: 0deg; }
+.compass-dial { width: 210px; height: 210px; position: relative; flex-shrink: 0; }
+.compass-dial > svg { width: 100%; height: 100%; fill: none; stroke: #9caf89; stroke-width: .8px; }
+.compass-center { position: absolute; inset: 0; display: flex; justify-content: center; align-items: center; font-size: 73px; letter-spacing: -7px; font-weight: 400; pointer-events: none; }
+.compass-center > span { font-family: var(--serif); font-size: .86em; font-style: italic; }
+.compass-hand { position: absolute; inset: 0; transform: rotate(var(--course-angle)); transition: transform .6s var(--ease); pointer-events: none; }
+.compass-hand > i { position: absolute; width: 8px; height: 8px; top: 32%; left: calc(50% - 4px); background: var(--ink); border-radius: 50%; box-shadow: 0 0 0 5px #b4cd923f; }
+.compass-node { position: absolute; width: 44px; height: 44px; border: 1px solid #a6b799; border-radius: 50%; background: #eaf0df; font-size: 11px; transition: color .2s, background .2s, box-shadow .2s; display: grid; place-items: center; }
+.compass-node:hover { background: #dce6cc; }
+.compass-node[aria-pressed=true] { background: var(--ink); color: var(--paper); border-color: var(--ink); box-shadow: 0 0 0 4px #183e3212; }
+.node-0 { top: 3px; left: calc(50% - 22px); }
+.node-1 { right: 3px; top: calc(50% - 22px); }
+.node-2 { bottom: 3px; left: calc(50% - 22px); }
+.node-3 { left: 3px; top: calc(50% - 22px); }
+.compass-status { display: flex; flex-direction: column; min-width: 0; }
+.compass-overline { font-size: 9px; letter-spacing: 1px; color: var(--muted); line-height: 1.5; }
+.compass-title { font-size: 27px; font-family: var(--serif); font-style: italic; margin-top: 9px; line-height: 1.2; }
+.compass-caption { color: var(--muted); font-size: 13px; line-height: 1.65; margin-top: 10px; max-width: 170px; }
+.compass-step { font-size: 11px; letter-spacing: 1.5px; margin-top: 17px; }
+@media (max-width: 1150px) {
+  .hero h1 { font-size: clamp(60px, 6.9vw, 83px); }
+  .hero-actions { flex-wrap: wrap; }
+  .hero-actions .button { padding-left: 20px; }
+  .hero-actions .text-link { font-size: 13px; }
+  .education-grid { gap: 6%; }
+  .course-compass { gap: 12px; }
+  .compass-dial { width: 174px; height: 174px; }
+  .compass-center { font-size: 60px; }
+  .compass-title { font-size: 25px; }
+  .media-note { font-size: 9px; }
+  .section-heading > p { max-width: 300px; }
+}
+@media (min-width: 701px) and (max-width: 900px) {
+  .site-header { gap: 14px; }
+  .desktop-nav { gap: 15px; }
+  .desktop-nav a { font-size: 12px; }
+  .header-cta { font-size: 12px; padding-inline: 14px; }
+  .hero h1 { font-size: 7.2vw; }
+  .hero .eyebrow { font-size: 9px; }
+  .hero-description, .about-copy p { font-size: 15px; }
+  .hero-art { min-height: 615px; }
+  .landscape-label, .landscape-coord { font-size: 8px; }
+  .hero-photo { width: 49%; bottom: 15%; }
+  .hero-photo div > span:first-child { font-size: 8px; letter-spacing: .4px; }
+  .about-copy .lead { font-size: 21px; }
+  .section-heading > p { max-width: 270px; font-size: 15px; }
+  .course-compass { gap: 8px; }
+  .compass-dial { width: 154px; height: 154px; }
+  .compass-node { width: 40px; height: 40px; }
+  .node-0 { top: 0; left: calc(50% - 20px); }
+  .node-1 { right: 0; top: calc(50% - 20px); }
+  .node-2 { bottom: 0; left: calc(50% - 20px); }
+  .node-3 { left: 0; top: calc(50% - 20px); }
+  .compass-title { font-size: 23px; }
+  .compass-caption { font-size: 12px; }
+  .teacher-row > small { max-width: none; }
+  .founders h3 { font-size: 21px; }
+  .join-top { align-items: flex-start; }
+  .join-year { max-width: 230px; text-align: right; }
+  .footer-top > p { margin-left: 5%; }
+}
+@media (max-width: 700px) {
+  .site-header { height: 76px; gap: 10px; }
+  .brand > span { font-size: 24px; }
+  .brand-sub { font-size: 6.5px; letter-spacing: 1.3px; }
+  .brand-mark { width: 30px; height: 30px; }
+  .header-cta { font-size: 13px; gap: 8px; padding: 10px 13px; min-height: 44px; }
+  .menu-toggle { width: 44px; height: 44px; }
+  .menu-toggle span { left: 12px; top: 17px; }
+  .menu-toggle span + span { top: 24px; }
+  .menu-toggle[aria-expanded=true] span { top: 21px; }
+  .hero { min-height: 0; padding-top: 26px; padding-bottom: 26px; }
+  .hero .eyebrow { font-size: 9px; gap: 7px; letter-spacing: .7px; }
+  .hero h1 { font-size: clamp(48px, 12.4vw, 78px); line-height: 1.01; margin: 22px 0 21px; }
+  .hero-description { font-size: 16px; line-height: 1.7; max-width: 440px; }
+  .hero-actions { flex-direction: row; gap: 10px 14px; margin-top: 22px; align-items: center; }
+  .hero-actions .button, .hero-actions .text-link { font-size: 14px; }
+  .hero-actions .button { padding-left: 18px; gap: 12px; min-height: 50px; }
+  .hero-actions .text-link { gap: 6px; }
+  .play-small { width: 25px; height: 25px; }
+  .hero-art { height: clamp(290px, 79vw, 380px); min-height: 0; margin-top: 25px; }
+  .landscape-frame { inset: 0 2% 5% 11%; border-radius: 44% 44% 3px 3px; }
+  .landscape-label { display: none; }
+  .landscape-coord { font-size: 8px; right: 14px; bottom: 16px; line-height: 1.6; }
+  .book-stage { width: 160px; height: 221px; left: 55%; top: 45%; }
+  .cover-frame { inset: 12px 11px 12px 15px; padding-block: 12px; }
+  .cover-top { font-size: 5.5px; }
+  .cover-bottom { font-size: 4.5px; }
+  .book-rosette { transform: scale(.60); }
+  .since-seal { width: 72px; height: 72px; right: 0; top: 9%; gap: 4px; }
+  .since-seal > strong { font-size: 24px; }
+  .since-seal > span { font-size: 5px; letter-spacing: .6px; }
+  .hero-orbit { width: 97%; height: 53%; left: 0; top: 20%; }
+  .orbit-two { width: 86%; height: 66%; left: 12%; top: 12%; }
+  .hero-photo { width: 38%; max-width: 185px; left: 0; bottom: 2%; padding: 6px; }
+  .hero-photo div > span:first-child { font-size: 8px; letter-spacing: .4px; line-height: 1.4; }
+  .art-caption { font-size: 12px; bottom: -11px; right: 1%; }
+  .section-space { padding-block: 64px; }
+  .section-kicker { font-size: 10px; letter-spacing: .9px; margin-bottom: 30px; }
+  .section-kicker > span:last-child { display: none; }
+  .about-copy .lead { font-size: 22px; }
+  .about-copy p, .education-intro > p, .course-body p,
+  .media-copy > p, .section-heading > p, .day-panels p,
+  .faq-list details > p { font-size: 16px; line-height: 1.8; }
+  .about-copy p { margin-bottom: 18px; }
+  .section-heading > p { max-width: 480px; }
+  .outcome p { font-size: 17px; }
+  .outcome small { font-size: 14px; }
+  .education-intro { min-height: 0; }
+  .education-intro h2 { max-width: 100%; }
+  .education-intro > p { max-width: 460px; }
+  .education-grid { gap: 28px; }
+  .course-compass { gap: 22px; margin-top: 26px; }
+  .compass-dial { width: 164px; height: 164px; }
+  .compass-center { font-size: 58px; }
+  .compass-title { font-size: 29px; }
+  .compass-caption { font-size: 14px; max-width: 160px; margin-top: 8px; }
+  .compass-step { font-size: 11px; margin-top: 10px; }
+  .four-t-list summary { gap: 17px; }
+  .four-t-list strong { font-size: 30px; }
+  .four-t-list summary small { font-size: 14px; }
+  .course-body { padding-left: 32px; }
+  .book-reference { font-size: 13px; padding: 13px 15px; }
+  .book-reference > span { font-size: 9px; letter-spacing: 1px; }
+  .curriculum > summary { font-size: 23px; }
+  .curriculum-action { font-size: 14px; }
+  .curriculum-grid { gap: 27px 18px; }
+  .curriculum-grid h3 { font-size: 18px; line-height: 1.3; }
+  .curriculum-grid p { font-size: 15px; }
+  .curriculum-grid small { font-size: 12px; }
+  .curriculum-note { font-size: 13px; }
+  .media-copy .button { font-size: 14px; }
+  .media-tags > span { font-size: 12px; padding: 8px 11px; }
+  .media-visual { padding-bottom: 44px; }
+  .media-note { font-size: 8px; max-width: 100%; letter-spacing: .6px; }
+  .media-bottom { font-size: 9px; letter-spacing: .6px; }
+  .multimedia { padding-bottom: 0; }
+  .day-image { height: 285px; }
+  .day-tabs > button { font-size: 14px; min-height: 44px; }
+  .day-activities > span { font-size: 12px; }
+  .day-footnote { font-size: 11px; }
+  .day-panels article { min-height: 275px; }
+  .gallery-section .section-heading { display: block; }
+  .gallery-controls { display: flex; justify-content: flex-end; margin-top: 22px; }
+  .gallery-controls .round-button { width: 44px; height: 44px; }
+  .gallery-item small { font-size: 10px; }
+  .gallery-footer > span { font-size: 10px; }
+  .gallery-footer > p { font-size: 14px; }
+  .mudir-portrait { height: 260px; }
+  .mudir-portrait > img { height: 88%; }
+  .mudir-label { font-size: 9px; letter-spacing: .5px; max-width: 125px; line-height: 1.5; }
+  .mudir-copy { padding: 30px 14px; }
+  .mudir-copy h3 { font-size: 23px; line-height: 1.15; }
+  .mudir-copy > span { font-size: 12px; }
+  .mudir-copy > p { font-size: 13px; }
+  .founders > .eyebrow { font-size: 11px; }
+  .founders p { font-size: 14px; }
+  .teacher-row { flex-direction: column; gap: 9px; }
+  .teacher-row h3 { font-size: 18px; }
+  .teacher-row span { font-size: 13px; max-width: none; }
+  .teacher-row > small { font-size: 12px; text-align: left; max-width: none; }
+  .more-teachers > summary { font-size: 15px; }
+  .additional-teachers { grid-template-columns: 1fr; }
+  .additional-teachers h3 { font-size: 16px; }
+  .additional-teachers p { font-size: 13px; }
+  .source-note { font-size: 12px; }
+  .join-top .eyebrow { font-size: 10px; letter-spacing: .8px; }
+  .join-year { font-size: 10px; letter-spacing: .6px; }
+  .join-main > p { font-size: 16px; max-width: 440px; }
+  .join-main .button { font-size: 14px; }
+  .join-contact { font-size: 10px; gap: 8px 12px; }
+  .join-contact > span { font-size: 14px; }
+  .join-bottom > span { font-size: 9px; }
+  .join-bottom > a { font-size: 13px; line-height: 1.6; margin-top: 10px; }
+  .faq-list summary { font-size: 16px; }
+  .footer-top > p { font-size: 16px; }
+  .footer-details .eyebrow { font-size: 10px; }
+  .footer-details address, .footer-details a { font-size: 14px; }
+  .footer-details { grid-template-columns: 1.2fr .8fr; gap: 30px 20px; }
+  .footer-note p { font-size: 12px; }
+  .footer-bottom { font-size: 11px; }
+  .lightbox figcaption { font-size: 13px; }
+}
+@media (max-width: 370px) {
+  :root { --gutter: 20px; }
+  .site-header { gap: 7px; }
+  .brand-mark { width: 26px; height: 26px; }
+  .brand { gap: 6px; }
+  .brand > span { font-size: 21px; }
+  .brand-sub { font-size: 5.5px; letter-spacing: 1px; }
+  .header-cta { padding-inline: 10px; font-size: 13px; }
+  .header-cta > span { display: none; }
+  .hero h1 { font-size: clamp(44px, 13.4vw, 49px); }
+  .hero-actions { gap: 8px 15px; }
+  .hero-art { height: 290px; }
+  .book-stage { width: 151px; height: 210px; }
+  .hero-photo div > span:first-child { font-size: 7px; }
+  .compass-dial { width: 146px; height: 146px; }
+  .course-compass { gap: 16px; }
+  .compass-center { font-size: 50px; }
+  .compass-title { font-size: 25px; }
+  .compass-caption { font-size: 13px; }
+  .compass-overline { font-size: 8px; }
+  .mudir-copy h3 { font-size: 21px; }
+  .mudir-copy > p { font-size: 12px; }
+  .footer-details { grid-template-columns: 1fr; }
+  .footer-note { grid-column: auto; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .compass-hand { transition: none; }
+}
+@media print {
+  .compass-node, .compass-hand { display: none !important; }
+  .course-compass { break-inside: avoid; }
+}

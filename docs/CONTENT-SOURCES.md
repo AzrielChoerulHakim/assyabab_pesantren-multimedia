@@ -13,7 +13,7 @@ Slogan, judul editorial, ilustrasi buku, ikon, dan tata letak dibuat khusus untu
 ## Foto
 
 - `salak.avif`: dokumentasi alam, slide 27.
-- `multimedia.avif`: santri dengan kamera dan mikrofon, slide 10.
+- `multimedia.avif`: santri dengan kamera dan mikrofon, slide 19 (koreksi nomor slide pada dokumentasi revisi 1).
 - `halaqah.avif`: kegiatan Al-Qur'an, slide 10.
 - `lapangan.avif`: olahraga di lapangan, slide 20.
 - `asrama.avif`: ruang asrama, slide 22.
@@ -26,3 +26,9 @@ Gambar diekstrak dari materi, dipotong sesuai komposisi, diperkecil, dan dikompr
 ## Persetujuan sebelum peluncuran
 
 Konfirmasikan izin publikasi foto, logo resmi, susunan pengelola/pengajar, kontak, status ijazah, ketentuan bantuan pendidikan, biaya, kuota, dan periode penerimaan. Persetujuan pengelola belum dinyatakan sebagai fakta oleh prototipe ini.
+
+## Ekspor detail pada revisi 2
+
+- `salak-detail.avif`: gambar PNG 960×1280 pada slide 27, diekspor menjadi 780×1020 piksel. Tidak ada penambahan detail generatif.
+- `mudir-detail.avif`: potret PNG 1307×1279 pada slide 6, diekspor menjadi 600×587 piksel dengan transparansi dipertahankan. Penamaan mengikuti keterangan peran pada materi, bukan identifikasi wajah.
+- Kedua foto memakai versi kecil yang sudah ada sebagai kandidat srcset. Foto lain dipertahankan; penyelarasan saturasi dilakukan melalui CSS. Tidak ada potret pengajar baru atau foto stok yang ditambahkan.
