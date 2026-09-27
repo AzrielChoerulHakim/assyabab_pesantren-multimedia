@@ -1,0 +1,60 @@
+{
+  "desktop": {
+    "width": 1440,
+    "horizontalOverflow": false,
+    "errors": [],
+    "missingImages": [],
+    "height": 9131,
+    "fourTAccordion": true,
+    "daySwitch": true,
+    "curriculum": true,
+    "lightboxOpen": true,
+    "lightboxClose": true
+  },
+  "mobile": {
+    "width": 390,
+    "horizontalOverflow": false,
+    "errors": [],
+    "missingImages": [],
+    "height": 9631,
+    "fourTAccordion": true,
+    "daySwitch": true,
+    "curriculum": true,
+    "lightboxOpen": true,
+    "lightboxClose": true,
+    "menuOpen": true,
+    "menuClose": true
+  },
+  "small": {
+    "width": 320,
+    "horizontalOverflow": false,
+    "errors": [],
+    "missingImages": [],
+    "height": 9708,
+    "fourTAccordion": true,
+    "daySwitch": true,
+    "curriculum": true,
+    "lightboxOpen": true,
+    "lightboxClose": true,
+    "menuOpen": true,
+    "menuClose": true
+  },
+  "tablet": {
+    "width": 768,
+    "horizontalOverflow": false,
+    "errors": [],
+    "missingImages": [],
+    "height": 7752,
+    "fourTAccordion": true,
+    "daySwitch": true,
+    "curriculum": true,
+    "lightboxOpen": true,
+    "lightboxClose": true
+  },
+  "reducedMotion": true,
+  "withoutJavaScript": {
+    "heading": true,
+    "allDaysReadable": true,
+    "whatsappLinks": 3
+  }
+}
