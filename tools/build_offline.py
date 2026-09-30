@@ -39,7 +39,7 @@ def build(root: Path, destination: Path) -> None:
     # In the portable copy use the detailed src. No responsive network requests are needed.
     html = re.sub(r'\s+srcset="[^"]*"', '', html)
     html = re.sub(r'\s+sizes="[^"]*"', '', html)
-    media_types = {'.avif': 'image/avif', '.svg': 'image/svg+xml'}
+    media_types = {'.avif': 'image/avif', '.svg': 'image/svg+xml', '.png': 'image/png'}
     for asset in sorted((root / 'assets').iterdir()):
         mime = media_types.get(asset.suffix.lower())
         if mime:
