@@ -340,3 +340,6 @@ body.modal-open { overflow: hidden; }
 .about-heading > * { min-width:0; }
 @media (max-width:360px) { .about-heading h2 { font-size:38px; overflow-wrap:break-word; } }
 @media (min-width:701px) and (max-width:850px) { .about-heading h2 { font-size:38px; } }
+
+/* Vector arrows retain the surrounding color and size on every platform. */
+.icon-arrow { display: inline-block; width: 1em; height: 1em; flex-shrink: 0; vertical-align: -0.125em; pointer-events: none; }
