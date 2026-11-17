@@ -1,0 +1,43 @@
+/* Original event flyer gallery — intentionally uncropped, no JS dependency. */
+.flyer-archive{background:#f7f6ee;color:#183e32;scroll-margin-top:90px}
+.flyer-archive__inner{max-width:1490px;margin-inline:auto}
+.flyer-archive__kicker{margin-bottom:clamp(42px,5vw,68px)}
+.flyer-archive__head{display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);align-items:end;gap:clamp(30px,6vw,115px);margin-bottom:clamp(45px,5.5vw,82px)}
+.flyer-archive__head h2{font-size:clamp(50px,6.2vw,98px);line-height:1.03;letter-spacing:-.065em;font-weight:500}
+.flyer-archive__head h2 .serif{color:#58745c}
+.flyer-archive__intro{max-width:365px}
+.flyer-archive__intro p{font-size:16px;line-height:1.75;color:#47685a}
+.flyer-archive__mark{display:block;font-size:45px;line-height:.9;color:#8da67c;margin-bottom:25px}
+.flyer-archive__intro .flyer-archive__hint{margin-top:17px;font-size:12px;font-weight:600;letter-spacing:.02em;color:#183e32}
+.flyer-archive__grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:clamp(21px,3.5vw,64px);align-items:start}
+.flyer-archive__item{min-width:0;margin:0}
+.flyer-archive__image-link{display:block;position:relative;overflow:hidden;background:#e9eadf;border:1px solid #d9dfd1;line-height:0;isolation:isolate}
+.flyer-archive__image-link img{width:100%;height:auto;aspect-ratio:1229/1536;object-fit:contain;transition:transform .45s cubic-bezier(.2,.6,.2,1)}
+.flyer-archive__image-link:hover img{transform:scale(1.018)}
+.flyer-archive__view{position:absolute;right:16px;bottom:16px;z-index:2;display:inline-flex;gap:32px;align-items:center;border-radius:50px;background:#143b2f;color:#fff;font-size:12px;line-height:1.4;font-weight:700;padding:13px 16px;box-shadow:0 3px 10px #102e2028}
+.flyer-archive__view>span{font-size:18px;line-height:1}
+.flyer-archive__item figcaption{padding-top:22px}
+.flyer-archive__caption-top{border-top:1px solid #ccd5c6;padding-top:16px;display:flex;align-items:center;justify-content:space-between;gap:14px;font-size:10px;line-height:1.5;letter-spacing:.13em;font-weight:650;color:#647c6e}
+.flyer-archive__item h3{font-size:clamp(24px,2.35vw,38px);letter-spacing:-.045em;font-weight:500;line-height:1.2;margin-top:15px}
+.flyer-archive__item h3 span{font-family:var(--serif);font-weight:400;font-style:italic}
+.flyer-archive__item figcaption p{font-size:14px;line-height:1.65;color:#607168;margin-top:8px}
+.flyer-archive__foot{display:flex;align-items:center;justify-content:space-between;gap:20px;border-top:1px solid #ccd5c6;margin-top:clamp(40px,5vw,77px);padding-top:24px}
+.flyer-archive__foot>span{font-size:10px;letter-spacing:.15em;font-weight:650;color:#647c6e}
+.flyer-archive__foot>a{display:inline-flex;align-items:center;gap:16px;min-height:44px;border-bottom:1px solid #9eae9e;font-size:13px;font-weight:600}
+.flyer-archive__foot>a:hover{color:#597830}
+@media(max-width:900px){.flyer-archive__head{grid-template-columns:1.1fr .9fr;gap:28px}.flyer-archive__head h2{font-size:clamp(48px,6vw,73px)}}
+@media(max-width:700px){
+ .flyer-archive{scroll-margin-top:76px}
+ .flyer-archive__head{display:block;margin-bottom:40px}
+ .flyer-archive__head h2{font-size:clamp(48px,11vw,74px)}
+ .flyer-archive__intro{margin-top:27px;max-width:420px}
+ .flyer-archive__mark{font-size:32px;margin-bottom:13px}
+ .flyer-archive__intro p{font-size:15px}
+ .flyer-archive__grid{grid-template-columns:1fr;gap:52px}
+ .flyer-archive__item h3{font-size:29px}
+ .flyer-archive__view{right:12px;bottom:12px;padding:12px 14px;font-size:12px}
+ .flyer-archive__foot{align-items:flex-start;flex-direction:column}
+}
+@media(max-width:360px){.flyer-archive__caption-top{font-size:9px}.flyer-archive__item h3{font-size:26px}}
+@media(prefers-reduced-motion:reduce){.flyer-archive__image-link img{transition:none}.flyer-archive__image-link:hover img{transform:none}}
+@media print{.flyer-archive__view{display:none}.flyer-archive__grid{break-inside:avoid}.flyer-archive__item{break-inside:avoid}}
