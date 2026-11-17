@@ -1,0 +1,115 @@
+/* Agenda Desember 2026 — HTML-first editorial section; no brochure image, no JS dependency. */
+.event-season{--e-bg:#143b2f;--e-paper:#f5f3e8;--e-muted:#b8c8bc;--e-line:rgba(235,245,223,.25);--e-gold:#d9be7a;scroll-margin-top:90px;background:var(--e-bg);color:var(--e-paper)}
+.event-season__inner{max-width:1800px;margin-inline:auto;padding-block:clamp(74px,8vw,120px) clamp(60px,7vw,106px)}
+.event-season__kicker{margin-bottom:clamp(42px,5vw,70px);color:var(--e-paper);border-bottom:1px solid var(--e-line);padding-bottom:20px}
+.event-season__kicker>span:last-child{color:var(--e-muted)}
+.event-season__intro{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(270px,.7fr);gap:clamp(30px,6vw,100px);align-items:end;margin-bottom:clamp(58px,7vw,100px)}
+.event-season__eyebrow{display:inline-flex;align-items:center;gap:14px;font-size:11px;letter-spacing:.19em;font-weight:650;line-height:1.6}
+.event-season__asterisk{font-size:27px;line-height:.6;color:var(--e-gold)}
+.event-season__headline h2{font-family:var(--sans);font-size:clamp(52px,6.8vw,112px);font-weight:500;line-height:1.025;letter-spacing:-.062em;margin-top:23px;max-width:930px}
+.event-season__headline h2 em{font-family:var(--serif);font-weight:400;letter-spacing:-.045em;color:var(--e-gold)}
+.event-season__aside{display:flex;flex-direction:column;justify-content:flex-end;align-items:flex-start;min-width:0}
+.event-season__year{font-family:var(--serif);font-size:clamp(86px,10vw,160px);letter-spacing:-.085em;line-height:.8;color:rgba(230,238,219,.24);margin-bottom:37px}
+.event-season__aside p{font-size:clamp(16px,1.4vw,19px);line-height:1.65;color:var(--e-paper);max-width:370px}
+.event-season__meta{display:flex;gap:12px 20px;flex-wrap:wrap;margin-top:28px}
+.event-season__meta span{font-size:10px;letter-spacing:.095em;line-height:1.6;border-top:1px solid var(--e-line);padding-top:12px;color:var(--e-muted)}
+.event-season__programs{border-top:1px solid var(--e-line)}
+.event-rail{display:grid;grid-template-columns:minmax(0,.88fr) minmax(0,1.12fr);gap:clamp(40px,7vw,130px);padding:clamp(42px,5.5vw,82px) 0;border-bottom:1px solid var(--e-line);color:var(--e-paper);min-width:0}
+.event-rail__identity,.event-rail__content{min-width:0}
+.event-rail__edition{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:18px;border-bottom:1px solid var(--e-line);font-size:10px;letter-spacing:.16em;line-height:1.5;color:var(--e-muted)}
+.event-rail__edition span:last-child{text-align:right}
+.event-rail__date{display:flex;align-items:baseline;gap:4px;margin:clamp(28px,3vw,48px) 0 24px;white-space:nowrap}
+.event-rail__date time,.event-rail__date>span{font-size:clamp(68px,8.4vw,148px);line-height:.9;font-weight:400;letter-spacing:-.1em}
+.event-rail__date>span{margin-inline:5px 13px;color:var(--e-gold);font-size:clamp(44px,5vw,84px)}
+.event-rail__date small{font-size:clamp(11px,1.15vw,16px);letter-spacing:.09em;line-height:1.35;margin-left:16px;font-weight:700}
+.event-rail h3{font-size:clamp(42px,4.4vw,72px);line-height:1.06;letter-spacing:-.055em;font-weight:500}
+.event-rail h3 em{font-family:var(--serif);font-weight:400;letter-spacing:-.035em;color:var(--e-gold)}
+.event-rail__description{max-width:390px;margin-top:20px;font-size:16px;line-height:1.75;color:var(--e-muted)}
+.event-rail__audience{display:flex;gap:8px;flex-wrap:wrap;margin-top:28px}
+.event-rail__audience span{display:inline-flex;border:1px solid var(--e-line);border-radius:80px;padding:10px 15px;font-size:10px;font-weight:600;letter-spacing:.08em}
+.event-rail__facts{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid var(--e-line);padding:16px 0 30px}
+.event-rail__facts>div{min-width:0;display:flex;flex-direction:column;gap:8px}
+.event-rail__label{display:block;font-size:10px;line-height:1.6;font-weight:650;letter-spacing:.16em;color:var(--e-muted)}
+.event-rail__facts strong{font-size:clamp(20px,2.2vw,34px);line-height:1.18;letter-spacing:-.045em;font-weight:500}
+.event-rail__facts small{font-size:12px;line-height:1.6;color:var(--e-muted)}
+.event-rail h4{margin:7px 0 16px;font-size:clamp(19px,2vw,26px);font-weight:500;letter-spacing:-.025em}
+.event-rail__list{list-style:none;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:0 23px;margin:0;padding:0;border-top:1px solid var(--e-line)}
+.event-rail__list li{display:flex;align-items:flex-start;gap:13px;padding:13px 0;border-bottom:1px solid var(--e-line);font-size:14px;line-height:1.5;min-width:0}
+.event-rail__list li:before{content:"✳";font-size:12px;color:var(--e-gold);flex:none;padding-top:2px}
+.event-rail__extra{display:grid;grid-template-columns:minmax(120px,.46fr) minmax(0,1fr);gap:18px;padding:23px 0;border-bottom:1px solid var(--e-line)}
+.event-rail__extra p{font-size:14px;line-height:1.7;color:var(--e-paper)}
+.event-rail__contact{display:flex;justify-content:space-between;align-items:center;gap:20px;margin-top:31px}
+.event-rail__button{display:inline-flex;align-items:center;justify-content:space-between;gap:32px;min-height:54px;padding:14px 21px;background:var(--e-gold);color:var(--e-bg);font-size:14px;font-weight:700;border-radius:100px;transition:transform .25s,background .25s;white-space:nowrap}
+.event-rail__button:hover{background:#efdaa7;transform:translateY(-2px)}
+.event-rail__button>span[aria-hidden]{font-size:24px;line-height:1}
+.event-rail__contact>div{display:flex;flex-direction:column;align-items:flex-end;text-align:right;gap:4px;min-width:0}
+.event-rail__contact>div>a{font-size:18px;font-weight:600;letter-spacing:-.02em;white-space:nowrap}
+.event-rail__contact>div>small{font-size:12px;color:var(--e-muted)}
+.event-rail--light{--e-line:rgba(20,59,47,.24);--e-muted:#597363;--e-paper:#143b2f;--e-gold:#926f27;background:#eaf0e2;color:#143b2f;margin-inline:calc(-1 * var(--gutter));padding-inline:var(--gutter);border-bottom:0}
+.event-rail--light .event-rail__button{background:#143b2f;color:#f5f3e8}
+.event-rail--light .event-rail__button:hover{background:#2e604d}
+.event-rail__categories{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:20px}
+.event-rail__categories>div{padding:22px 0;border-top:1px solid var(--e-line);border-bottom:1px solid var(--e-line);display:flex;flex-direction:column;gap:11px}
+.event-rail__categories span{font-size:10px;font-weight:650;letter-spacing:.13em;color:var(--e-muted)}
+.event-rail__categories strong{font-size:clamp(19px,2.2vw,30px);letter-spacing:-.035em;font-weight:500;line-height:1.2}
+.event-rail__judges ul{list-style:none;margin:0;padding:0;display:grid;gap:16px}
+.event-rail__judges li{display:flex;flex-direction:column;gap:3px}
+.event-rail__judges strong{font-size:15px;font-weight:600}
+.event-rail__judges li span{font-size:12px;color:var(--e-muted);line-height:1.5}
+.event-season__location{display:flex;align-items:flex-end;justify-content:space-between;gap:24px;padding-top:42px}
+.event-season__location address{font-style:normal;font-size:16px;line-height:1.7;margin-top:11px}
+.event-season__location>a{display:inline-flex;align-items:center;gap:18px;border-bottom:1px solid var(--e-line);padding:12px 0;line-height:1.5;font-size:13px;font-weight:600;white-space:nowrap}
+.event-season__location>a:hover{color:var(--e-gold)}
+.event-season a:focus-visible{outline:3px solid var(--e-gold);outline-offset:4px}
+@media(max-width:1050px){
+ .event-season__intro{grid-template-columns:1.35fr .75fr;gap:30px}
+ .event-rail{gap:38px;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+ .event-rail__contact{align-items:flex-start;flex-wrap:wrap}
+ .event-rail__contact>div{align-items:flex-start;text-align:left}
+ .event-rail__date time,.event-rail__date>span{font-size:clamp(62px,7.5vw,94px)}
+ .event-rail__date small{margin-left:10px}
+}
+@media(max-width:700px){
+ .event-season{scroll-margin-top:76px}
+ .event-season__inner{padding-block:68px 60px}
+ .event-season__kicker{margin-bottom:40px;gap:15px}
+ .event-season__kicker>span:last-child{max-width:150px}
+ .event-season__intro{display:block;margin-bottom:56px}
+ .event-season__headline h2{font-size:clamp(44px,9vw,72px);line-height:1.08;margin-top:24px}
+ .event-season__aside{display:grid;grid-template-columns:95px 1fr;gap:18px;align-items:start;margin-top:30px}
+ .event-season__year{font-size:78px;margin:4px 0 0}
+ .event-season__aside p{font-size:15px;line-height:1.65}
+ .event-season__meta{grid-column:1 / -1;margin-top:0}
+ .event-rail{display:block;padding:44px 0 54px}
+ .event-rail__identity{margin-bottom:39px}
+ .event-rail__date{margin:25px 0 22px}
+ .event-rail__date time,.event-rail__date>span{font-size:clamp(76px,16vw,118px)}
+ .event-rail__date>span{font-size:55px}
+ .event-rail__date small{font-size:12px;margin-left:10px}
+ .event-rail h3{font-size:clamp(44px,9vw,66px)}
+ .event-rail__description{font-size:15px}
+ .event-rail__facts{padding-bottom:24px}
+ .event-rail__facts strong{font-size:clamp(21px,5vw,31px)}
+ .event-rail__list li{font-size:13px}
+ .event-rail__extra{grid-template-columns:110px minmax(0,1fr)}
+ .event-season__location{align-items:flex-start;flex-direction:column;gap:18px}
+ .event-season__location address{font-size:14px}
+}
+@media(max-width:420px){
+ .event-season__aside{grid-template-columns:1fr;gap:10px}
+ .event-season__year{font-size:64px}
+ .event-season__headline h2{font-size:clamp(40px,10.6vw,52px)}
+ .event-rail__edition{font-size:9px}
+ .event-rail__date time,.event-rail__date>span{font-size:clamp(63px,17vw,76px)}
+ .event-rail__date>span{font-size:43px;margin-inline:3px 7px}
+ .event-rail__date small{font-size:10px;margin-left:7px}
+ .event-rail__list{grid-template-columns:1fr}
+ .event-rail__categories{grid-template-columns:1fr;gap:0}
+ .event-rail__extra{grid-template-columns:1fr;gap:6px}
+ .event-rail__contact{display:grid;gap:20px}
+ .event-rail__button{white-space:normal}
+ .event-rail__facts{gap:12px}
+ .event-rail__facts strong{font-size:21px}
+}
+@media(prefers-reduced-motion:reduce){.event-rail__button{transition:none}}
+@media print{.event-season{background:#fff;color:#111}.event-season__inner{padding-block:24px}.event-rail--light{background:#eee}.event-season__aside,.event-rail__contact,.event-season__location>a{display:none}.event-season__programs{border-color:#555}.event-rail{break-inside:avoid}}
